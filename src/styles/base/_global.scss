@@ -1,0 +1,11 @@
+@use "../abstracts" as a;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: a.$beige;
+  margin: 0;
+  padding: 0;
+}

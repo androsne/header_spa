@@ -1,0 +1,47 @@
+@use "../abstracts" as a;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow-x: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 600px;
+    background-color: a.$beige;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 600px;
+    background-color: a.$green;
+    z-index: 0;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 16px 100px;
+  z-index: 1;
+}
+
+.header,
+main,
+.testimonies {
+  position: relative;
+  z-index: 1;
+}

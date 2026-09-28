@@ -1,0 +1,52 @@
+@use "../abstracts" as a;
+
+.testimonies {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+
+  > div {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: a.$bg-box;
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 16px;
+    pointer-events: auto;
+    gap: 8px;
+
+    &:nth-child(1) {
+      bottom: 280px;
+      right: 30px;
+    }
+
+    &:nth-child(2) {
+      bottom: 60px;
+      right: 120px;
+    }
+  }
+
+  &_img {
+    width: 24px;
+    height: auto;
+  }
+
+  &_text {
+    color: a.$black;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  &_author {
+    color: a.$blue;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

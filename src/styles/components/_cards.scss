@@ -1,0 +1,44 @@
+@use "../abstracts" as a;
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  max-width: 500px;
+  padding: 24px;
+  gap: 32px;
+  position: relative;
+  margin-top: 90px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  &_icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+
+  &_title {
+    color: a.$blue;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  &_subtitle {
+    color: a.$grey;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 100px;
+    text-align: center;
+  }
+}

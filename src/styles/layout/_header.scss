@@ -1,0 +1,106 @@
+@use "../abstracts" as a;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-primary {
+  margin-left: 160px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  a {
+    color: a.$blue;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .chevron {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    img {
+      width: 18px;
+      height: auto;
+    }
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 48px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  a {
+    color: a.$blue;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s ease;
+
+    img {
+      width: 24px;
+      height: auto;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  a {
+    color: a.$blue;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
